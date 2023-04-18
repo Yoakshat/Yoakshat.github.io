@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
-  <!-- Head -->
+<!-- _layouts/distill.html --><html>
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    <!-- Metadata, OpenGraph and Schema.org -->
     
@@ -10,9 +8,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>a post with giscus comments | Akshat  Mundra</title>
+    <title>AI APIs in Healthcare | Akshat  Mundra</title>
     <meta name="author" content="Akshat  Mundra">
-    <meta name="description" content="an example of a blog post with giscus comments">
+    <meta name="description" content="how AI is being brought to medical experts with no AI expertise">
     <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
 
 
@@ -33,7 +31,7 @@
     <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://yoakshat.github.io/blog/2022/giscus-comments/">
+    <link rel="canonical" href="https://yoakshat.github.io/blog/2023/AI-APIs-in-Healthcare/">
     
     <!-- Dark Mode -->
     
@@ -43,10 +41,65 @@
     <script src="/assets/js/dark_mode.js"></script>
     
 
+
+    <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- MathJax -->
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        tags: 'ams'
+      }
+    };
+  </script>
+  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
+  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+    <!-- Distill js -->
+    <script src="/assets/js/distillpub/template.v2.js"></script>
+    <script src="/assets/js/distillpub/transforms.v2.js"></script>
+    <script src="/assets/js/distillpub/overrides.js"></script>
+    
   </head>
 
-  <!-- Body -->
-  <body class="fixed-top-nav ">
+  <body>
+<d-front-matter>
+    <script async type="text/json">{
+      "title": "AI APIs in Healthcare",
+      "description": "how AI is being brought to medical experts with no AI expertise",
+      "published": "April 14, 2023",
+      "authors": [
+        {
+          "author": "Akshat Mundra",
+          "authorURL": "",
+          "affiliations": [
+            {
+              "name": "North Creek HS",
+              "url": ""
+            }
+          ]
+        }
+        
+      ],
+      "katex": {
+        "delimiters": [
+          {
+            "left": "$",
+            "right": "$",
+            "display": false
+          },
+          {
+            "left": "$$",
+            "right": "$$",
+            "display": true
+          }
+        ]
+      }
+    }</script>
+  </d-front-matter>
+
+  
 
     <!-- Header -->
     <header>
@@ -106,30 +159,93 @@
 
 
     <!-- Content -->
-    <div class="container mt-5">
-      <!-- _layouts/post.html -->
+    <div class="post distill">
 
-<div class="post">
+      <d-title>
+        <h1>AI APIs in Healthcare</h1>
+        <p>how AI is being brought to medical experts with no AI expertise</p>
+      </d-title>
 
-  <header class="post-header">
-    <h1 class="post-title">a post with giscus comments</h1>
-    <p class="post-meta">December 10, 2022</p>
-    <p class="post-tags">
-      <a href="/blog/2022"> <i class="fas fa-calendar fa-sm"></i> 2022 </a>
-        ·  
-        <a href="/blog/category/sample-posts">
-          <i class="fas fa-tag fa-sm"></i> sample-posts</a>  
-          <a href="/blog/category/external-services">
-          <i class="fas fa-tag fa-sm"></i> external-services</a>  
-          
+      <d-byline></d-byline>
 
-    </p>
-  </header>
+      <d-article>
+        <d-contents>
+          <nav class="l-text figcaption">
+          <h3>Contents</h3>
+            <div><a href="#introduction">Introduction</a></div>
+            <div><a href="#technology-apis">Technology APIs</a></div>
+            <div><a href="#ai-no-code-software">AI No-Code Software</a></div>
+            <div><a href="#conclusion">Conclusion</a></div>
+            
+          </nav>
+        </d-contents>
 
-  <article class="post-content">
-    <p>This post shows how to add GISCUS comments.</p>
+        <h2 id="introduction">Introduction</h2>
+<p>People are thinking that the new best people in any field will be the people 
+who know how to use AI the ‘best way.’ They know how AI can best combine with their creative
+mind and efforts. They may be right or absolutely wrong.</p>
 
-  </article><div id="giscus_thread" style="max-width: 800px; margin: 0 auto;">
+<p>AI developers are working to democratize AI, to bring a no-code workspace but still modify the 
+AI to more of their liking. To take their expert knowledge and augment the AI with it. Then maybe 
+when we get this, physicians and doctors won’t be frustrated that neural networks are ‘black boxes.’ 
+Instead they can be like a puppet steering the AI in the right direction and checking if the math 
+behind the scenes is leading to the right results.</p>
+
+<p>So as of today, what are the AI APIs in healthcare that do this sort of thing?</p>
+
+<h2 id="technology-apis">Technology APIs</h2>
+<p>In the healthcare world, technology API companies are growing and becoming unicorn companies. Optum,
+under the same creators of UnitedHealth, is one of the biggest data analytics arms for healthcare 
+companies to directly plug in. Healthcare is very complicated, so if a tool doesn’t provide any 
+overhead stress but makes life easier, it’s a good pitch.</p>
+
+<p>There are also APIs like Particle Health. As an introduction, healthcare requires great security, 
+anonymization, so if we wanted to have an API where hospitals could access patient records just from
+their name we wouldn’t be able to. It’d be extremely helpful to hospitals, but also lead to needing
+cybersecurity teams constantly battling the hacking going on (while billions of records are at risk). 
+What Particle Health does is instead use patient demographics to find a patient and all of their 
+records; it’s a great and simple idea!</p>
+
+<p>Brendan Keeler in his new quirky post on April 10 called “Super Integration Fighter III” splits software into the “atomic units,” databases, user interfaces, and system interfaces.</p>
+
+<p>Healthcare tends to outsource a lot of things to APIs (especially now with physician burnout on a high where it’s better for tech to do some of the jobs). Keeler talks about how when we get to the optimal stage, of any hospital or clinic being able to access a patient’s data or use an API that connects all patients, we’ll have to throw away the idea of tech siloes. It’ll be hard but either there’ll need to be a common data format (like FHIR which makes it easy) or even what would be interesting, a way hospitals could easily change the API for their use case with low-code.</p>
+
+<p>I really want to talk about this part, about getting the power of APIs in the hospital’s hands and obviously with AI, because that’s been my craze for a long time and now on everybody else’s trending page.</p>
+
+<h2 id="ai-no-code-software">AI No-Code Software</h2>
+<p>After searching around, there is not much research on AI low-code or no-code software IN HEALTHCARE. We’ve heard 
+of AI being used for finding similar gene expressions, for making DNA/RNA sequencing cheap, but what about deployment? 
+AI will accelerate, but now hasn’t really, but let’s look at how AI low-code software will work practically?</p>
+
+<p>Brainstorming a few applications off my mind</p>
+<ul>
+  <li>If a doctor doesn’t agree with the AI model say taking an image and predicting cancer, the doctor can type into the AI their
+reasons and the AI might augment its prediction (we’re not there yet).</li>
+  <li>More API-style, you tell your AI your use case and they look through the EHR to find what information you need (this could be really cool)</li>
+  <li>AI APIs don’t just need to be doctor facing but can also be patient-facing helping them distill hard-to-understand medical information</li>
+</ul>
+
+<p>With all the processing tasks, my imagination of low-code is there are differences across each clinic? Can you find some way to embed information in the AI that tells them because of this difference, do this task this way. Because there are common use cases, but a billion different data formats, a billion different little things to do. If we get every sort of data to be machine-readable, throw away the idea of a common data format (like FHIR), we’ll let the AI do its work!</p>
+
+<h2 id="conclusion">Conclusion</h2>
+<p>I think what this is getting at is what we call multi-task learning in AI. An AI tried out a bunch of different data problems. Now the AI knows I can use how I solved all these other problems, to solve this new problem, even though it looks 
+different! And this is how academics learn, how people learn. Researches have tried different neural networks, RNN, ANNs, Transformers, hundreds of times, and they have some intuition on what model they should use for a new problem.</p>
+
+<p>Instead of the billions of different AI applications we’re seeing (like AI art-generation, AI text-generation, AI Q&amp;A) I think we achieve real human-computer interaction when you can talk to it in some sort of semi machine-human language (not code) and it can do whatever you want.</p>
+
+<p>Then again, I wouldn’t think it would be frustrating if it was like a vending machine or a drink machine, where you click what application you want (text generation, art generation, Q&amp;A). That’ll only be $1.50 (vending machine joke). Then the machine figures how to do the task for your set of data. It’s all interesting, futuristic, and awesome!</p>
+
+<p><i>Goodnight even though it’s not night,
+yall!</i></p>
+
+      </d-article>
+
+      <d-appendix>
+        <d-footnote-list></d-footnote-list>
+        <d-citation-list></d-citation-list>
+      </d-appendix>
+
+      <d-bibliography src="/assets/bibliography/"></d-bibliography><div id="giscus_thread" style="max-width: 800px; margin: 0 auto;">
   <script>
     let giscusTheme = localStorage.getItem("theme");
     let giscusAttributes = {
@@ -159,8 +275,6 @@
 </div>
 </div>
 
-    </div>
-
     <!-- Footer -->    
     <footer class="fixed-bottom">
       <div class="container mt-0">
@@ -169,39 +283,9 @@
       </div>
     </footer>
 
-    <!-- JavaScripts -->
-    <!-- jQuery -->
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
     <!-- Bootsrap & MDB scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha256-fgLAgv7fyCGopR/gBNq2iW3ZKIdqIcyshnUULC4vex8=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
-
-    <!-- Masonry & imagesLoaded -->
-  <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-  <script defer src="/assets/js/masonry.js" type="text/javascript"></script>
-    
-  <!-- Medium Zoom JS -->
-  <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.8/dist/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
-  <script defer src="/assets/js/zoom.js"></script><!-- Load Common JS -->
-  <script defer src="/assets/js/common.js"></script>
-  <script defer src="/assets/js/copy_code.js" type="text/javascript"></script>
-
-    
-  <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
-  <script async src="https://badge.dimensions.ai/badge.js"></script>
-
-    <!-- MathJax -->
-  <script type="text/javascript">
-    window.MathJax = {
-      tex: {
-        tags: 'ams'
-      }
-    };
-  </script>
-  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
-  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 
     
     
@@ -283,5 +367,6 @@
   }
 </script>
 
-  </body>
+  
+</body>
 </html>
