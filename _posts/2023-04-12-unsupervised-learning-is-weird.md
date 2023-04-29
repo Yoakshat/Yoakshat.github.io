@@ -4,7 +4,7 @@ title: Unsupervised learning is weird!
 description: just talking about machine learning
 giscus_comments: true
 date: 2023-4-12
-
+tags: math machine-learning
 
 authors:
  - name: Akshat Mundra

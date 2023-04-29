@@ -4,6 +4,7 @@ title: AI APIs in Healthcare
 description: how AI is being brought to medical experts with no AI expertise
 giscus_comments: true
 date: 2023-04-14
+tags: healthcare machine-learning
 
 authors:
   - name: Akshat Mundra
