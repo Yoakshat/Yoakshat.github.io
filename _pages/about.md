@@ -16,9 +16,12 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hey, I am Akshat or Yoakshat! Hopefully I didn't just give up my password to most sites, luckily it's a variation 
-of Yoakshat with characters and numbers (that you can't guess)! Anyways, I love programming Artificial Intelligence, reading and writing even though I haven't read a full book end to end (like most highschoolers) in a long time, and thinking about healthcare. 
+Hey, I am Akshat! This is my second iteration on this bio, and it's chaotic. I like to be a fun, crazy, chaotic guy, sometimes 
+diving into the math of how the world works to different deep learning algorithms. Stroking my beard is a nice 
+pasttime, playing Call of Duty while striking my beard is even better!
 
-Just to call it out, I was in the AI field long before the AI trend started, though not as long as when Yann Lecun 
-put out his infamous paper on Convolutional Neural Networks (I'd be in single-digits). I am a teenager, almost technically adult, and fortunately I'm still a Junior because of a technicality (yay I guess)! I don't have a favorite
-subreddit even though that's one of the main things this Jekyll theme wants me to put, but whatever. 
+When I am not doing AI stuff, I'm probably watching an Indian web series on youtube. 
+
+And just to call it out, I was in the AI field long before the AI trend started, though not as long as when Yann Lecun 
+put out his infamous paper on Convolutional Neural Networks (I'd be in single-digits). And I don't have a favorite
+subreddit even though that's one of the main things this Jekyll theme wants me to put, but whatever. Yay!
