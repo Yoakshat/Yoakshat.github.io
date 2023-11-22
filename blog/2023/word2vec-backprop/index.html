@@ -8,9 +8,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>The Math Behind Word2Vec | Akshat  Mundra</title>
+    <title>A Demo of Word2Vec | Akshat  Mundra</title>
     <meta name="author" content="Akshat  Mundra">
-    <meta name="description" content="My first time with gradient calculus after we just learned it in math class">
+    <meta name="description" content="Going Behind the Scenes">
     <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
 
 
@@ -21,7 +21,7 @@
     <!-- Fonts & Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700%7CRoboto+Slab:100,300,400,500,700%7CMaterial+Icons">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
 
     <!-- Code Syntax Highlighting -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="" id="highlight_theme_light">
@@ -66,8 +66,8 @@
   <body>
 <d-front-matter>
     <script async type="text/json">{
-      "title": "The Math Behind Word2Vec",
-      "description": "My first time with gradient calculus after we just learned it in math class",
+      "title": "A Demo of Word2Vec",
+      "description": "Going Behind the Scenes",
       "published": "May 9, 2023",
       "authors": [
         {
@@ -131,10 +131,13 @@
 
               <!-- Other pages -->
               <li class="nav-item ">
-                <a class="nav-link" href="/publications/">publications</a>
+                <a class="nav-link" href="/book/">My Book!</a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="/repositories/">repositories</a>
+                <a class="nav-link" href="/research/">My Research!</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/repositories/">Repositories</a>
               </li>
 
               <!-- Toogle theme mode -->
@@ -162,8 +165,8 @@
     <div class="post distill">
 
       <d-title>
-        <h1>The Math Behind Word2Vec</h1>
-        <p>My first time with gradient calculus after we just learned it in math class</p>
+        <h1>A Demo of Word2Vec</h1>
+        <p>Going Behind the Scenes</p>
       </d-title>
 
       <d-byline></d-byline>
@@ -171,16 +174,12 @@
       <d-article>
         
 
-        <p>I think after a lot of thinking, I know the big trick to gradient calculus. At first, I started
-thinking about each changing parameter and I was super scared of a big neural network, because
-I am not doing backprop for billions of parameters. We have our fav torch.grad() for that.</p>
+        <p>When you think you know everything about gradient calculus after you learn it in Calc class, you realize
+you know nothing. Especially when deriving a derivative for billions of parameters and programming
+backpropogation. Libraries like Pytorch and Tensorflow do all the hard backpropogation work for us, 
+so why should we care?!</p>
 
-<p>But the trick is you can compute the gradient for just one parameter, and then just apply 
-that to the entire vector. Haven’t at all tested out in code! Oh no! But I’m pretty sure you can just
-plug in the formula for one parameter for the entire vector and it should work!</p>
-
-<p>Like here, after learning mathjax I can finally compete with the mathy blogs - I’ve always wanted to do these! 
-Watch this!</p>
+<p>Here is a demo of MathJax showing how to update weights with vectors &amp; gradients.</p>
 
 \[\begin{bmatrix} w_0 &amp; w_1 &amp; w_2 \end{bmatrix} 
     - lr * \begin{bmatrix} 
@@ -196,7 +195,11 @@ Watch this!</p>
      \frac{\partial \hat{p_2}}{\partial w_2}  
     \end{bmatrix}\]
 
-<p>The complete word2vec calculus is on the way…</p>
+<p>Now back on topic! In the Natural Language Processing field, years ago, Word2Vec was huge. Now we 
+ignore it, having all these fancier-techniques. But TODAY, wanting to go back 
+to the basics AND show a behind-the-scenes, here is a demonstration of Word2Vec I created:</p>
+
+<p><a href="https://www.kaggle.com/code/akshatmundra/word2vec-from-almost-scratch" rel="external nofollow noopener" target="_blank">A Kaggle Notebook with a Word2Vec Demo</a></p>
 
       </d-article>
 

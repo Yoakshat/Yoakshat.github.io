@@ -1,14 +1,384 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://yoakshat.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://yoakshat.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-05-09T20:51:29+00:00</updated><id>https://yoakshat.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
-</subtitle><entry><title type="html">The Math Behind Word2Vec</title><link href="https://yoakshat.github.io/blog/2023/word2vec-backprop/" rel="alternate" type="text/html" title="The Math Behind Word2Vec" /><published>2023-05-09T00:00:00+00:00</published><updated>2023-05-09T00:00:00+00:00</updated><id>https://yoakshat.github.io/blog/2023/word2vec-backprop</id><content type="html" xml:base="https://yoakshat.github.io/blog/2023/word2vec-backprop/"><![CDATA[<p>I think after a lot of thinking, I know the big trick to gradient calculus. At first, I started
-thinking about each changing parameter and I was super scared of a big neural network, because
-I am not doing backprop for billions of parameters. We have our fav torch.grad() for that.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://yoakshat.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://yoakshat.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-11-22T19:30:42+00:00</updated><id>https://yoakshat.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+</subtitle><entry><title type="html">Titanic Rules Frenzy</title><link href="https://yoakshat.github.io/blog/2023/Titanic-Rules-Frenzy/" rel="alternate" type="text/html" title="Titanic Rules Frenzy" /><published>2023-11-22T00:00:00+00:00</published><updated>2023-11-22T00:00:00+00:00</updated><id>https://yoakshat.github.io/blog/2023/Titanic-Rules-Frenzy</id><content type="html" xml:base="https://yoakshat.github.io/blog/2023/Titanic-Rules-Frenzy/"><![CDATA[<h2 id="we-love-rules">We Love Rules</h2>
+<p>Predicting who survived on the Titanic. With some plain data science, fun experiments, and RULES, you can be in the top 6% of 15000 teams on Kaggle. I’ll show you how. Click the link below &amp; explore:</p>
 
-<p>But the trick is you can compute the gradient for just one parameter, and then just apply 
-that to the entire vector. Haven’t at all tested out in code! Oh no! But I’m pretty sure you can just
-plug in the formula for one parameter for the entire vector and it should work!</p>
+<p><a href="https://www.kaggle.com/code/akshatmundra/titanic-with-just-rules?scriptVersionId=151875651">My Kaggle Notebook with a 79.904% accuracy: Can you get it to 80%?</a></p>]]></content><author><name>Akshat Mundra</name></author><category term="math" /><category term="machine-learning" /><summary type="html"><![CDATA[Solving The Classic ML Task With Only Rules]]></summary></entry><entry><title type="html">Learning From A World Health-Educator</title><link href="https://yoakshat.github.io/blog/2023/health-tech-leaders/" rel="alternate" type="text/html" title="Learning From A World Health-Educator" /><published>2023-08-20T00:00:00+00:00</published><updated>2023-08-20T00:00:00+00:00</updated><id>https://yoakshat.github.io/blog/2023/health-tech-leaders</id><content type="html" xml:base="https://yoakshat.github.io/blog/2023/health-tech-leaders/"><![CDATA[<p>Guys, this is a peek into my book and an interview with a leader in health-tech. For anyone who wants to keep up or even learn how to innovate in health-tech, this is for you. A lot of their answers, I’ve paraphrased, but still retain the core message. In my book, I have the TLDR to show the most important insights. Here, 
+I’ve also added an extended Q&amp;A. Have fun!</p>
 
-<p>Like here, after learning mathjax I can finally compete with the mathy blogs - I’ve always wanted to do these! 
-Watch this!</p>
+<h2 id="charlotte-cole">Charlotte Cole</h2>
+<p>Charlotte Cole is an innovator in education for places with limited resources. She has built education-solutions from Africa to Haiti to Thailand, through the medium of tv-shows to magazines. Specifically in healthcare, she has built characters like Kami and Lola educating young children about HIV to preventing malaria.</p>
+
+<p>She used to be one of the heads of global education at Sesame Workshop in New York City. Now she has co-founded Blue Butterfly 
+Collaborative aiming to transform education around the world</p>
+
+<h1 id="tldr">TLDR:</h1>
+<ul>
+  <li>
+    <p>Work with local people. If you try to develop a Whatsapp-education program, in a place where kids rarely have access to a phone it’ll be hard.
+Instead a local university nearby might help you deliver your message by airing your program on their computers.</p>
+  </li>
+  <li>
+    <p>Redefine scalability not as the number of people you impact, but how big of an impact you had on a small amount of people. For example, if you can surround these 
+people with educational materials from when they’re at a hospital, to when they’re in school, to when they’re taking shelter from an earthquake, you’ll have a big impact.</p>
+  </li>
+  <li>
+    <p>Specialize in one part of the education pipeline, and outsource to organizations good at things you are not. If you’re a content developer, outsource to 
+distributors, broadcasters, etc.</p>
+  </li>
+</ul>
+
+<p><strong>Q: How do you battle health accessibility with health messaging?</strong></p>
+
+<p><strong>A</strong>: In some parts of the world, people don’t have accessibility to basic care, while others don’t have accessibility to sophisticated care. So I think messages do have to be contextually based.</p>
+
+<p>For example, at Sesame we were trying to figure out how to educate kids about nutrition. We thought about showing kids a rainbow of 
+different colors, you know, eat your 5 colors. But the problem is 
+often kids don’t decide what they eat, they eat what their parents
+give them.</p>
+
+<p>This is what we struggle with.</p>
+
+<p><strong>Q: Are there any examples of you have gotten over these barriers?</strong></p>
+
+<p><strong>A</strong>: The best way for the nutrition example above is to 
+work with local people. For example, breadfruit is something 
+that is readily available. However, many people have stopped 
+using it. Encouraging people to go back to this local food, that is more nutritious than a packaged food, is an example.</p>
+
+<p>But to do this, it’s really important to work with local people.</p>
+
+<p><strong>Q: With that, have you faced any challenges with scaling up when a lot of the solutions have to be delivered locally?</strong></p>
+
+<p><strong>A</strong>: Scalability is not necessarily a goal. We do work in media, 
+and mass media is really good at reaching a lot of people. But if 
+you want to really have an impact, there’s something to be said for
+having an impact at a local level. Even if it’s not a lot people, 
+you’re impacting them in a big way.</p>
+
+<p>Maybe that’s scalability. It’s all about depth vs breadth.</p>
+
+<p><strong>Q: Do partners and funders believe in the mission of having 
+a big impact at the local level?</strong></p>
+
+<p><strong>A</strong>: Funding is always hard, but we’re lucky to have a lot of partners that have a similar mission. For example in Hades, we work as a part of a consortium of nonprofits which are very education-minded.</p>
+
+<p>We’re content developers and that’s our strength. But we have partners that work with schools, are broadcasters, are great distributors, etc. Increasingly, what we’re finding in the difficult places we work, is the more we can specialize on different pieces, the more impact we can collectively have.</p>
+
+<p><strong>Q: 
+Do you see one of your goals being to encourage more like minded communities and more grass-root innovators to come into this field OR is it a need for more efficient and better partnerships?</strong></p>
+
+<p><strong>A</strong>: I mean our goal is to build the capacity in local teams to 
+develop high-quality educational material for kids. You know, we have some tricks up our sleeve. We can give people content that’s worked in other parts of the world and they can adapt it for their use.</p>
+
+<p>In a lot of school settings, the way kids are taught doesn’t match
+what we know about how kids learn. And, and so what we’re trying to do is kind of move from a very didactic way of teaching, to a way that inspires kids to think on their own and think critically, and to collaborate with each other and to think creatively. But in order to do that, you have to change the mindset, and approaches of teachers and even the materials that they’re using.</p>
+
+<p><strong>Q: I’m super interested in the health-education part of your work, but you work in the entirety of education! What’s up with that?</strong></p>
+
+<p><strong>A</strong>: In Haiti, we actually have an animated program of a little
+cuckoo. Many of the hospitals in Haiti have it on a loop so while
+you’re in the waiting room, you can watch it. And families are stuck in hours in waiting rooms.</p>
+
+<p>And, you know, when they’re showing in a hospital, they’re not necessarily selling health content, they’re just showing our content. We do this kind of thing through food programs too, where when people are distributing food, you can also add activity pages for kids (to learn while eating). Or in emergency situations, where kids are taking shelter for hours, if you have magazines in that shelter you can achieve learning!</p>
+
+<p><strong>Q: How do you evaluate what educational programs work and don’t work?</strong></p>
+
+<p><strong>A</strong>: You have to typically come up with some metric and analyze that. Maybe you expose a group of children to your content versus another type of content, and see what they learned before and after. A lot of the studies are done through ‘randomized control trials.’</p>
+
+<p>And then there’s also the fact that studies might not reflect real life. A Bangladeshi researcher actually observed families as they were engaging with our program, and interviewed them before and after they watched it. You need a combination of real-life observations and experimental data.</p>]]></content><author><name>Akshat Mundra</name></author><category term="healthcare" /><summary type="html"><![CDATA[A conversation with Charlotte Cole]]></summary></entry><entry><title type="html">Health + AI Research</title><link href="https://yoakshat.github.io/blog/2023/health-+-AI-research/" rel="alternate" type="text/html" title="Health + AI Research" /><published>2023-07-29T00:00:00+00:00</published><updated>2023-07-29T00:00:00+00:00</updated><id>https://yoakshat.github.io/blog/2023/health-+-AI-research</id><content type="html" xml:base="https://yoakshat.github.io/blog/2023/health-+-AI-research/"><![CDATA[<p><em>I want to credit my mentor Gabriel Barner Erion for giving me some of these ideas and discussions which led to the spark of my own ideas</em></p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>Hospitals can benefit from Artificial Intelligence with tasks like predicting if a patient is going to be readmitted or not. For example, if a model outputs yes to be readmitted, hospitals may choose to schedule a primary care visit within a week. This helps both care outcomes and makes sure the hospital is running efficiently. No longer, will that readmitted patient take extra space in the intensive care unit (ICU)!</p>
+
+<p>Using discharge summaries, many machine learning models have been 
+trained on this task. Discharge summaries are what a doctor writes just before the patient is discharged, with information 
+about the entire patient’s stay. However, often these summaries are templated. Now imagine every time an ice-cream truck comes to the beach, 
+the tides grow bigger. It’s a coincidence but if that’s the only thing you saw, the next time you saw an ice-cream truck you’d say the tides are going
+to grow bigger. To remove this type of correspondence, this research asks what happens if we remove templates from discharge summaries?</p>
+
+<h2 id="finding-templates">Finding Templates</h2>
+
+<p>Imagine you had a function to determine the similarity between two documents: \(sim(doc1, doc2)\). 
+The documents that are the closest together in a representation space, will often be templates.</p>
+
+<h2 id="transforming-text-into-a-representation-space">Transforming Text into a Representation Space</h2>
+
+<p>Machines, computers, and math all understand numbers not words. One way to encode a document is with 
+<strong>bag-of-words</strong>, which creates a vector of word frequencies. Imagine you have a dictionary 
+like [loves, he, mom].</p>
+
+<p>Your sentence “he loves loves mom” will be transformed into the vector [2, 1, 1]. Let’s show how this can be done in code!</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">sklearn.feature_extraction.text</span> <span class="kn">import</span> <span class="n">CountVectorizer</span>
+<span class="k">def</span> <span class="nf">transform</span><span class="p">(</span><span class="n">texts</span><span class="p">){</span>
+    <span class="k">return</span> <span class="nc">CountVectorizer</span><span class="p">().</span><span class="nf">fit_transform</span><span class="p">(</span><span class="n">texts</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Then, we might define the similarity function of two vectors as:</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="k">def</span> <span class="nf">similarity</span><span class="p">(</span><span class="n">vector1</span><span class="p">,</span> <span class="n">vector2</span><span class="p">){</span>
+    <span class="k">return</span> <span class="n">np</span><span class="p">.</span><span class="nf">sum</span><span class="p">((</span><span class="n">vector2</span> <span class="o">-</span> <span class="n">vector1</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">);</span> 
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>This is just the euclidean distance between both vectors, but without the square root! Using this code, you can compare one document 
+to thousands of other documents. Then, the top ten are likely templates. However, an even better way of finding templates doesn’t require
+<strong>bag-of-words</strong>. For finding templates, <strong>one-hot-encoding</strong> actually seems to be better.</p>
+
+<p><strong>One-hot-encoding</strong> means that if the dictionary is [loves, he, mom] and the sentence is “he loves loves mom”, this sentence will be 
+transformed into the vector [1, 1, 1]. A word is only counted once. In other words, we only care if a word is present or not present!</p>
+
+<h2 id="algorithm-1">Algorithm 1</h2>
+
+<ol>
+  <li>Turn documents into vectors with one-hot-encoding</li>
+  <li>Loop through vectors and compute similarities with all others</li>
+  <li>If there are over 50 documents that are <strong>highly similar</strong> (greater than some threshold), put these documents into one template</li>
+</ol>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">find_templates</span><span class="p">(</span><span class="n">texts</span><span class="p">):</span> 
+    <span class="n">templates</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="c1"># turns documents into vectors with one-hot-encoding
+</span>    <span class="n">vectors</span> <span class="o">=</span> <span class="nf">one_hot_encode</span><span class="p">(</span><span class="n">texts</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">vectors</span><span class="p">:</span> 
+        <span class="c1"># compute similarity with all vectors
+</span>        <span class="n">simScores</span> <span class="o">=</span> <span class="nf">similarityAll</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">vectors</span><span class="p">)</span>
+        <span class="c1"># if over 50 documents
+</span>        <span class="k">if</span> <span class="n">np</span><span class="p">.</span><span class="nf">sum</span><span class="p">(</span><span class="n">simScores</span> <span class="o">&gt;=</span> <span class="mf">0.9</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">50</span><span class="p">:</span> 
+            <span class="c1"># place these documents into one template
+</span>            <span class="n">templates</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="n">texts</span><span class="p">[</span><span class="n">np</span><span class="p">.</span><span class="nf">where</span><span class="p">(</span><span class="n">simScores</span> <span class="o">&gt;=</span> <span class="mf">0.9</span><span class="p">)[</span><span class="mi">0</span><span class="p">]])</span>
+</code></pre></div></div>
+
+<p>We actually use a different similarity function than euclidean distance, which proves better at finding templates! Here’s the psuedocode!</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">similarity</span><span class="p">(</span><span class="n">vector1</span><span class="p">,</span> <span class="n">vector2</span><span class="p">):</span> 
+    <span class="sh">'''</span><span class="s">
+    Take the number of words in document one that document 2 shares and divide it by the unique words of document 1
+    Do the vice-versa
+    Then average them to get a score
+    </span><span class="sh">'''</span>
+</code></pre></div></div>
+
+<h2 id="algorithm-2">Algorithm 2</h2>
+
+<ol>
+  <li>Turn documents into vectors with one-hot-encoding</li>
+  <li>Perform hierarchal clustering onto vectors, which automatically generates templates by merging the most similar vectors at every iteration!</li>
+  <li>Create an interactive that lets you visualize templates (I used Dash!) to figure out when you’ve found all the templates</li>
+</ol>
+
+<p>There’s a really nice video on hierarchal clustering that’s the best to explain: <a href="https://www.youtube.com/watch?v=7xHsRkOdVwo">StatQuest Video</a></p>
+
+<p>A brief overview of hierarchal clustering is every iteration, it merges the closest groups together! At the end, all the documents will be in one group (it’s like a genetic tree from all the species to Adam and Eve). I make the assumption that because 
+<strong>templates will always be the most similar to each other</strong> we can end at the iteration where the next vector or group merged which isn’t a template</p>
+
+<p>Watch the StatQuest video, seriously!</p>
+
+<h2 id="algorithm-3">Algorithm 3</h2>
+
+<p>This algo is very similar to the last one! Hierarchal clustering starts by merging individual vectors and then starts merging groups. Now how do you 
+compute the similarity between two groups. You compute the centroid of both groups and then find the similarity between them.</p>
+
+<p>Instead of centroid, in this algorithm we use the mode of the groups. This means if our group was</p>
+
+<p>[1, 1, 0]
+[1, 1, 0]
+[1, 1, 1]</p>
+
+<p>The mode would be [1, 1, 0]. The reason for using mode is it likely does a better job at recognizing templates. 
+Modes are particularly better because [1, 1, 0] represents all the parts that are templated (all the common words). 
+Since we are looking for documents that have these common words, we would want to compare it to just these common words!</p>
+
+<p>Also algo 2 used the similarity function of euclidean distance (mainly because it was convenient to plug in scipy’s version of hierarchal clustering 
+without having to do much work)! 
+Algo 3 uses the same similarity function as algo 1!</p>
+
+<h2 id="results">Results</h2>
+<p>A logistic regression model is as good as an XGBoost, or a KNN, to predict readmission. In this case, 
+we feed the model <strong>bag-of-words</strong>. How does removing templates via all three algorithms, affect the logistic regression model’s performance?</p>
+
+<p>We actually test two things.</p>
+<ol>
+  <li>What happens if we remove the templated words inside the document (zero them out in our vector)?</li>
+  <li>What happens if we half their word-count (deem them as not as important)?</li>
+</ol>
+
+<p><strong>Algorithm 1</strong></p>
+
+<p>V1: removing them completely</p>
+<div class="row mt-3">
+   <div class="col-sm mt-3 mt-md-0">
+       <figure>
+
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/modesfast0.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
+
+   </div>
+</div>
+
+<p><strong>IMPORTANT</strong></p>
+
+<p>On the x-axis is the ratio of templates:all other documents. The reason for this measurement is most likely, if 
+there are a great number of templates relative to other documents, it will hinder the model’s performance. Otherwise, it won’t 
+hinder it as much.</p>
+
+<p>On the y-axis is AUROC (Area Under The Receiver Operating Characteristic). The best way to explain is it’s the area under this curve! You can notice why 1 is the best score!</p>
+<div class="row mt-3">
+   <div class="col-sm mt-3 mt-md-0">
+       <figure>
+
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/roc-curve-v2.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
+
+   </div>
+</div>
+
+<p>The green line represents the versions without templates. The red line represents the versions with templates. 
+The dashed lines represent the validation set, the data the model hasn’t seen, while solid lines represent the training set.</p>
+
+<p>What you should be looking for is are the green lines generally at least 5% higher than the red lines?</p>
+
+<p>V2: 50% removal</p>
+<div class="row mt-3">
+   <div class="col-sm mt-3 mt-md-0">
+       <figure>
+
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/modesfast0.5.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
+
+   </div>
+</div>
+
+<p><strong>Algorithm 2</strong></p>
+
+<p>V1: removing them completely</p>
+<div class="row mt-3">
+   <div class="col-sm mt-3 mt-md-0">
+       <figure>
+
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/dendogram0.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
+
+   </div>
+</div>
+
+<p>V2: 50% removal</p>
+<div class="row mt-3">
+   <div class="col-sm mt-3 mt-md-0">
+       <figure>
+
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/dendogram0.5.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
+
+   </div>
+</div>
+
+<p><strong>Algorithm 3</strong></p>
+
+<p>V1: removing them completely</p>
+<div class="row mt-3">
+   <div class="col-sm mt-3 mt-md-0">
+       <figure>
+
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/custom0png.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
+
+   </div>
+</div>
+
+<p>V2: 50% removal</p>
+<div class="row mt-3">
+   <div class="col-sm mt-3 mt-md-0">
+       <figure>
+
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/custom0.5.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
+
+   </div>
+</div>
+
+<h2 id="the-conclusion">The Conclusion</h2>
+<p>We seem to have disproved our hypothesis: templates don’t affect machine learning models, even simple like Logistic Regression! 
+Well not really, there are still so many new ideas we want to try!</p>
+
+<ol>
+  <li>When we actually remove the templated words, we are removing all signs of such word, not just the templated part! Here is an example, 
+“I want to bat a tennis ball with a bat” 
+“I want to bat a soccer ball with a cat”</li>
+</ol>
+
+<p>The template is “I want to bat a _ ball with a _.” We suboptimally, remove all these words. Now when we remove the word, “bat,” in the first sentence shown, 
+it also removes the last word of the first sentence (not actually part of the template)!</p>
+
+<p>We still have to figure out how to fix that!</p>
+
+<ol>
+  <li>What if we’re not recognizing all the templates? We really want to try <strong>multi-sequence alignment programs</strong>. 
+Usually, these programs are used on DNA segments to identify common strands. This is used, for example, to notice 
+how similar DNA segments are and build real genetic trees!</li>
+</ol>
+
+<p>Now, we want to use this on text! Can it find templates like it finds common strands in DNA?!</p>
+
+<p><strong>We’re not done yet!</strong></p>]]></content><author><name>Akshat Mundra</name></author><category term="math" /><category term="machine-learning" /><summary type="html"><![CDATA[Currently what I am working on...]]></summary></entry><entry><title type="html">A Demo of Word2Vec</title><link href="https://yoakshat.github.io/blog/2023/word2vec-backprop/" rel="alternate" type="text/html" title="A Demo of Word2Vec" /><published>2023-05-09T00:00:00+00:00</published><updated>2023-05-09T00:00:00+00:00</updated><id>https://yoakshat.github.io/blog/2023/word2vec-backprop</id><content type="html" xml:base="https://yoakshat.github.io/blog/2023/word2vec-backprop/"><![CDATA[<p>When you think you know everything about gradient calculus after you learn it in Calc class, you realize
+you know nothing. Especially when deriving a derivative for billions of parameters and programming
+backpropogation. Libraries like Pytorch and Tensorflow do all the hard backpropogation work for us, 
+so why should we care?!</p>
+
+<p>Here is a demo of MathJax showing how to update weights with vectors &amp; gradients.</p>
 
 \[\begin{bmatrix} w_0 &amp; w_1 &amp; w_2 \end{bmatrix} 
     - lr * \begin{bmatrix} 
@@ -24,7 +394,11 @@ Watch this!</p>
      \frac{\partial \hat{p_2}}{\partial w_2}  
     \end{bmatrix}\]
 
-<p>The complete word2vec calculus is on the way…</p>]]></content><author><name>Akshat Mundra</name></author><category term="math" /><category term="machine-learning" /><summary type="html"><![CDATA[My first time with gradient calculus after we just learned it in math class]]></summary></entry><entry><title type="html">AI APIs in Healthcare</title><link href="https://yoakshat.github.io/blog/2023/AI-APIs-in-Healthcare/" rel="alternate" type="text/html" title="AI APIs in Healthcare" /><published>2023-04-14T00:00:00+00:00</published><updated>2023-04-14T00:00:00+00:00</updated><id>https://yoakshat.github.io/blog/2023/AI-APIs-in-Healthcare</id><content type="html" xml:base="https://yoakshat.github.io/blog/2023/AI-APIs-in-Healthcare/"><![CDATA[<h2 id="introduction">Introduction</h2>
+<p>Now back on topic! In the Natural Language Processing field, years ago, Word2Vec was huge. Now we 
+ignore it, having all these fancier-techniques. But TODAY, wanting to go back 
+to the basics AND show a behind-the-scenes, here is a demonstration of Word2Vec I created:</p>
+
+<p><a href="https://www.kaggle.com/code/akshatmundra/word2vec-from-almost-scratch">A Kaggle Notebook with a Word2Vec Demo</a></p>]]></content><author><name>Akshat Mundra</name></author><category term="math" /><category term="machine-learning" /><summary type="html"><![CDATA[Going Behind the Scenes]]></summary></entry><entry><title type="html">AI APIs in Healthcare</title><link href="https://yoakshat.github.io/blog/2023/AI-APIs-in-Healthcare/" rel="alternate" type="text/html" title="AI APIs in Healthcare" /><published>2023-04-14T00:00:00+00:00</published><updated>2023-04-14T00:00:00+00:00</updated><id>https://yoakshat.github.io/blog/2023/AI-APIs-in-Healthcare</id><content type="html" xml:base="https://yoakshat.github.io/blog/2023/AI-APIs-in-Healthcare/"><![CDATA[<h2 id="introduction">Introduction</h2>
 <p>People are thinking that the new best people in any field will be the people 
 who know how to use AI the ‘best way.’ They know how AI can best combine with their creative
 mind and efforts. They may be right or absolutely wrong.</p>
@@ -205,4 +579,4 @@ all you have to do is take your image and output that same image.</p>
 of the Rick and Morty-verse. It’s a magical thing!</p>
 
 <p><i>Goodnight even though it’s not night,
-yall!</i></p>]]></content><author><name>Akshat Mundra</name></author><category term="math" /><category term="machine-learning" /><summary type="html"><![CDATA[just talking about machine learning]]></summary></entry><entry><title type="html">Substack and healthcare</title><link href="https://yoakshat.github.io/blog/2023/substack-and-healthcare/" rel="alternate" type="text/html" title="Substack and healthcare" /><published>2023-02-02T01:51:41+00:00</published><updated>2023-02-02T01:51:41+00:00</updated><id>https://yoakshat.github.io/blog/2023/substack-and-healthcare</id><content type="html" xml:base="https://yoakshat.github.io/blog/2023/substack-and-healthcare/"><![CDATA[]]></content><author><name></name></author><summary type="html"><![CDATA[WE NEED LABOR UNIONS ON SUBSTACK... PLS DON'T BAN THIS POST]]></summary></entry><entry><title type="html">Competing incentives in healthcare</title><link href="https://yoakshat.github.io/blog/2023/competing-incentives-in-healthcare/" rel="alternate" type="text/html" title="Competing incentives in healthcare" /><published>2023-01-26T14:59:37+00:00</published><updated>2023-01-26T14:59:37+00:00</updated><id>https://yoakshat.github.io/blog/2023/competing-incentives-in-healthcare</id><content type="html" xml:base="https://yoakshat.github.io/blog/2023/competing-incentives-in-healthcare/"><![CDATA[]]></content><author><name></name></author><summary type="html"><![CDATA[...doctors are not just evil aliens who want run every possible test to get the most money (they are just optimized to do so)]]></summary></entry><entry><title type="html">Update on being gone….</title><link href="https://yoakshat.github.io/blog/2023/update-on-being-gone/" rel="alternate" type="text/html" title="Update on being gone…." /><published>2023-01-24T06:12:31+00:00</published><updated>2023-01-24T06:12:31+00:00</updated><id>https://yoakshat.github.io/blog/2023/update-on-being-gone</id><content type="html" xml:base="https://yoakshat.github.io/blog/2023/update-on-being-gone/"><![CDATA[]]></content><author><name></name></author></entry><entry><title type="html">Could America’s Healthcare System Become the Netherlands</title><link href="https://yoakshat.github.io/blog/2023/could-americas-healthcare-system-become-the-netherlands/" rel="alternate" type="text/html" title="Could America’s Healthcare System Become the Netherlands" /><published>2023-01-22T19:34:45+00:00</published><updated>2023-01-22T19:34:45+00:00</updated><id>https://yoakshat.github.io/blog/2023/could-americas-healthcare-system-become-the-netherlands</id><content type="html" xml:base="https://yoakshat.github.io/blog/2023/could-americas-healthcare-system-become-the-netherlands/"><![CDATA[]]></content><author><name></name></author><summary type="html"><![CDATA[Everyone on Reddit says it's impossible, because of America's open market policies. However, Netherlands has healthcare + majorly private markets following similar capitalistic policies]]></summary></entry><entry><title type="html">The American Healthcare System Seems Great</title><link href="https://yoakshat.github.io/blog/2023/the-american-healthcare-system-seems-great/" rel="alternate" type="text/html" title="The American Healthcare System Seems Great" /><published>2023-01-20T03:59:33+00:00</published><updated>2023-01-20T03:59:33+00:00</updated><id>https://yoakshat.github.io/blog/2023/the-american-healthcare-system-seems-great</id><content type="html" xml:base="https://yoakshat.github.io/blog/2023/the-american-healthcare-system-seems-great/"><![CDATA[]]></content><author><name></name></author><summary type="html"><![CDATA[...on paper]]></summary></entry><entry><title type="html">The holy grail of healthcare companies: Kaiser Permanente</title><link href="https://yoakshat.github.io/blog/2023/the-holy-grail-of-healthcare-companies-kaiser-permanente/" rel="alternate" type="text/html" title="The holy grail of healthcare companies: Kaiser Permanente" /><published>2023-01-14T19:23:48+00:00</published><updated>2023-01-14T19:23:48+00:00</updated><id>https://yoakshat.github.io/blog/2023/the-holy-grail-of-healthcare-companies-kaiser-permanente</id><content type="html" xml:base="https://yoakshat.github.io/blog/2023/the-holy-grail-of-healthcare-companies-kaiser-permanente/"><![CDATA[]]></content><author><name></name></author><summary type="html"><![CDATA[How can we build another Kaiser Permanente? Is it possible?]]></summary></entry><entry><title type="html">What Everyone is Saying About the Recession’s Effect on Healthcare</title><link href="https://yoakshat.github.io/blog/2023/what-everyone-is-saying-about-the-recessions-effect-on-healthcare/" rel="alternate" type="text/html" title="What Everyone is Saying About the Recession’s Effect on Healthcare" /><published>2023-01-07T22:16:31+00:00</published><updated>2023-01-07T22:16:31+00:00</updated><id>https://yoakshat.github.io/blog/2023/what-everyone-is-saying-about-the-recessions-effect-on-healthcare</id><content type="html" xml:base="https://yoakshat.github.io/blog/2023/what-everyone-is-saying-about-the-recessions-effect-on-healthcare/"><![CDATA[]]></content><author><name></name></author><summary type="html"><![CDATA[The second black swan event]]></summary></entry></feed>
+yall!</i></p>]]></content><author><name>Akshat Mundra</name></author><category term="math" /><category term="machine-learning" /><summary type="html"><![CDATA[just talking about machine learning]]></summary></entry><entry><title type="html">Substack and healthcare</title><link href="https://yoakshat.github.io/blog/2023/substack-and-healthcare/" rel="alternate" type="text/html" title="Substack and healthcare" /><published>2023-02-02T01:51:41+00:00</published><updated>2023-02-02T01:51:41+00:00</updated><id>https://yoakshat.github.io/blog/2023/substack-and-healthcare</id><content type="html" xml:base="https://yoakshat.github.io/blog/2023/substack-and-healthcare/"><![CDATA[]]></content><author><name></name></author><summary type="html"><![CDATA[WE NEED LABOR UNIONS ON SUBSTACK... PLS DON'T BAN THIS POST]]></summary></entry><entry><title type="html">Competing incentives in healthcare</title><link href="https://yoakshat.github.io/blog/2023/competing-incentives-in-healthcare/" rel="alternate" type="text/html" title="Competing incentives in healthcare" /><published>2023-01-26T14:59:37+00:00</published><updated>2023-01-26T14:59:37+00:00</updated><id>https://yoakshat.github.io/blog/2023/competing-incentives-in-healthcare</id><content type="html" xml:base="https://yoakshat.github.io/blog/2023/competing-incentives-in-healthcare/"><![CDATA[]]></content><author><name></name></author><summary type="html"><![CDATA[...doctors are not just evil aliens who want run every possible test to get the most money (they are just optimized to do so)]]></summary></entry><entry><title type="html">Update on being gone….</title><link href="https://yoakshat.github.io/blog/2023/update-on-being-gone/" rel="alternate" type="text/html" title="Update on being gone…." /><published>2023-01-24T06:12:31+00:00</published><updated>2023-01-24T06:12:31+00:00</updated><id>https://yoakshat.github.io/blog/2023/update-on-being-gone</id><content type="html" xml:base="https://yoakshat.github.io/blog/2023/update-on-being-gone/"><![CDATA[]]></content><author><name></name></author></entry><entry><title type="html">Could America’s Healthcare System Become the Netherlands</title><link href="https://yoakshat.github.io/blog/2023/could-americas-healthcare-system-become-the-netherlands/" rel="alternate" type="text/html" title="Could America’s Healthcare System Become the Netherlands" /><published>2023-01-22T19:34:45+00:00</published><updated>2023-01-22T19:34:45+00:00</updated><id>https://yoakshat.github.io/blog/2023/could-americas-healthcare-system-become-the-netherlands</id><content type="html" xml:base="https://yoakshat.github.io/blog/2023/could-americas-healthcare-system-become-the-netherlands/"><![CDATA[]]></content><author><name></name></author><summary type="html"><![CDATA[Everyone on Reddit says it's impossible, because of America's open market policies. However, Netherlands has healthcare + majorly private markets following similar capitalistic policies]]></summary></entry></feed>
