@@ -1,7 +1,7 @@
 ---
 layout: distill
-title: The Math Behind Word2Vec
-description: My first time with gradient calculus after we just learned it in math class 
+title: A Demo of Word2Vec
+description: Going Behind the Scenes
 giscus_comments: true
 date: 2023-05-09
 tags: math machine-learning
@@ -27,16 +27,12 @@ authors:
 # If you use
 ---
 
-I think after a lot of thinking, I know the big trick to gradient calculus. At first, I started
-thinking about each changing parameter and I was super scared of a big neural network, because
-I am not doing backprop for billions of parameters. We have our fav torch.grad() for that. 
+When you think you know everything about gradient calculus after you learn it in Calc class, you realize
+you know nothing. Especially when deriving a derivative for billions of parameters and programming
+backpropogation. Libraries like Pytorch and Tensorflow do all the hard backpropogation work for us, 
+so why should we care?! 
 
-But the trick is you can compute the gradient for just one parameter, and then just apply 
-that to the entire vector. Haven't at all tested out in code! Oh no! But I'm pretty sure you can just
-plug in the formula for one parameter for the entire vector and it should work! 
-
-Like here, after learning mathjax I can finally compete with the mathy blogs - I've always wanted to do these! 
-Watch this! 
+Here is a demo of MathJax showing how to update weights with vectors & gradients. 
 
 $$ \begin{bmatrix} w_0 & w_1 & w_2 \end{bmatrix} 
     - lr * \begin{bmatrix} 
@@ -53,4 +49,9 @@ $$ \begin{bmatrix} w_0 & w_1 & w_2 \end{bmatrix}
     \end{bmatrix}
 $$
 
-The complete word2vec calculus is on the way... 
+
+Now back on topic! In the Natural Language Processing field, years ago, Word2Vec was huge. Now we 
+ignore it, having all these fancier-techniques. But TODAY, wanting to go back 
+to the basics AND show a behind-the-scenes, here is a demonstration of Word2Vec I created: 
+
+<a href="https://www.kaggle.com/code/akshatmundra/word2vec-from-almost-scratch">A Kaggle Notebook with a Word2Vec Demo</a>
